@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { BsRoutingModule } from './bs-routing.module';
 import { BsComponent } from './bs.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { BsComponent } from './bs.component';
   ],
   imports: [
     BrowserModule,
-    BsRoutingModule
+    BsRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [BsComponent]
